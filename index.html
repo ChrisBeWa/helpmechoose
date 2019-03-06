@@ -11,9 +11,24 @@
       <div class="inputs">
         <input placeholder="Destination"></input>
       </div>
-      <button>Add</button>
+      <button class="addOption">Add</button>
     </div>
+    <div class="resultSection"></div>
     <button>Go!</button>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+    $(function() {
+      $('.resultSection').hide()
+
+      var add_option = function() {
+        $('.inputs').append('<input></input>')
+      }
+
+      $('.addOption').click(add_option)
+    })
+    </script>
+
     <div>
       <img src="https://posterstore.se/images/zoom/153.jpg" alt="world map" align="middle">
     </div>
